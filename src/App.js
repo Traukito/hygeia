@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Prueba React.
+          Prueba React v3. Con commit para GitHub.
         </p>
         
       </header>
