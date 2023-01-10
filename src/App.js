@@ -4,7 +4,13 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h3>React con AWS Amplify</h3>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Prueba React.
+        </p>
+        
+      </header>
     </div>
   );
 }
