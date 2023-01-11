@@ -5,9 +5,9 @@ import App from './App';
 
 // Importaciones para agergar autenticación, según la página de documentación
 // de AWS
-import { Amplify } from 'aws-amplify';
-import config from './aws-exports';
-Amplify.configure(config);
+// import Amplify from 'aws-amplify';
+// import config from './aws-exports';
+// Amplify.configure(config);
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
