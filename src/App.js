@@ -3,10 +3,13 @@ import './App.css';
 
 // Importaciones para agergar autenticación, según la página de documentación
 // de AWS
-// import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
+import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
 
 
-function App() {
+
+function App({ signOut, user }) { 
+  // ... 
   return (
     <div className="App">
 
@@ -14,11 +17,14 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Prueba React vX. Con commit para GitHub.        
-        </p>        
+        </p> 
+        <Heading level={1}>Hello {user.username}</Heading>
+        <Button onClick={signOut}>Sign out</Button>       
+
       </header>
 
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);
