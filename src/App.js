@@ -18,8 +18,8 @@ function App({ signOut, user }) {
         <p>
           Prueba React vX. Con commit para GitHub.        
         </p> 
-        <Heading level={1}>Hello {user.username}</Heading>
-        <Button onClick={signOut}>Sign out</Button>       
+        <Heading style={ { color:'white' } } level={1}>Hello {user.username}</Heading>
+        <Button style={ { color:'white' } } onClick={signOut}>Salir</Button>       
 
       </header>
 
