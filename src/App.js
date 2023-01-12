@@ -4,7 +4,7 @@ import './App.css';
 // Importaciones para agergar autenticación, según la página de documentación
 // de AWS
 // import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
-//import '@aws-amplify/ui-react/styles.css';
+// import '@aws-amplify/ui-react/styles.css';
 
 // function App({ signOut, user }) { 
 function App() { 
