@@ -4,10 +4,15 @@ import './App.css';
 // Importaciones para agergar autenticación, según la página de documentación
 // de AWS
 // import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
+import { Amplify } from 'aws-amplify';
+
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
-// function App({ signOut, user }) { 
-function App() { 
+import awsExports from './aws-exports';
+Amplify.configure(awsExports);
+
+function App({ signOut, user }) {
   // ... 
   return (
     <div className="App">
@@ -18,12 +23,12 @@ function App() {
           Prueba React vX. Con commit para GitHub.        
         </p> 
         {/* <Heading style={ { color:'white' } } level={1}>Hello {user.username}</Heading> */}
-        {/* <Button style={ { color:'white' } } onClick={signOut}>Salir</Button>        */}
+        <button style={ { backgroundColor: 'blue', color:'white' } } onClick={signOut}>Salir</button>       
 
       </header>
 
     </div>
   );
 }
-export default App;
-// export default withAuthenticator(App);
+// export default App;
+export default withAuthenticator(App);
