@@ -8,14 +8,14 @@ import './App.css';
 
 // function App({ signOut, user }) { 
 function App() { 
-  // ... 
+
   return (
     <div className="App">
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Prueba React vX. Con commit para GitHub.        
+          Marquinho Amaya.        
         </p> 
         {/* <Heading style={ { color:'white' } } level={1}>Hello {user.username}</Heading> */}
         {/* <Button style={ { color:'white' } } onClick={signOut}>Salir</Button>        */}
