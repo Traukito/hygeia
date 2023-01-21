@@ -15,7 +15,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Marquinho Amaya.        
+          Marquinho Amaya Soto.        
         </p> 
         {/* <Heading style={ { color:'white' } } level={1}>Hello {user.username}</Heading> */}
         {/* <Button style={ { color:'white' } } onClick={signOut}>Salir</Button>        */}
